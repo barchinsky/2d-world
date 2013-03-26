@@ -1,0 +1,564 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0053)http://www.sfml-dev.org/wiki/en/sources/gradientcolor -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>
+    en:sources:gradientcolor    [SFML Wiki]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release rc2008-04-11">
+<meta name="robots" content="index,follow">
+<meta name="date" content="2010-11-01T19:02:27+0100">
+<meta name="keywords" content="en,sources,gradientcolor">
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.sfml-dev.org/wiki/lib/exe/opensearch.php" title="SFML Wiki">
+<link rel="start" href="http://www.sfml-dev.org/wiki/">
+<link rel="contents" href="http://www.sfml-dev.org/wiki/en/sources/gradientcolor?do=index" title="Все страницы">
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.sfml-dev.org/wiki/feed.php">
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.sfml-dev.org/wiki/feed.php?mode=list&ns=en:sources">
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.sfml-dev.org/wiki/_export/xhtml/en/sources/gradientcolor">
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.sfml-dev.org/wiki/_export/raw/en/sources/gradientcolor">
+<link rel="stylesheet" media="all" type="text/css" href="./en sources gradientcolor [SFML Wiki]_files/css.php">
+<link rel="stylesheet" media="screen" type="text/css" href="./en sources gradientcolor [SFML Wiki]_files/css(1).php">
+<link rel="stylesheet" media="print" type="text/css" href="./en sources gradientcolor [SFML Wiki]_files/css(2).php">
+<script type="text/javascript" charset="utf-8" src="./en sources gradientcolor [SFML Wiki]_files/js.php"></script>
+
+  <link rel="shortcut icon" href="http://www.sfml-dev.org/wiki/lib/tpl/sfml/images/favicon.gif">
+
+  </head>
+
+<body>
+
+<!-- Page title -->
+<div id="logo">
+  <a href="http://www.sfml-dev.org/wiki/" title="SFML wiki home"><img src="./en sources gradientcolor [SFML Wiki]_files/logo.jpg" width="770" height="200" class="link" title="SFML wiki home" alt="SFML wiki logo"></a>
+</div>
+
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="http://www.sfml-dev.org/wiki/en/sources/gradientcolor?do=backlink" title="Ссылки сюда">en:sources:gradientcolor</a>]]
+      </div>
+
+<div class="website_link">
+[[<a href="http://www.sfml-dev.org/">sfml website</a>]]</div>
+
+      <!--<div class="logo">
+        <a href="/wiki/"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">SFML Wiki</a>      </div>-->
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    <div class="bar" id="bar__top">
+      <div class="bar-left" id="bar__topleft">
+        <form class="button btn_source" method="post" action="./en sources gradientcolor [SFML Wiki]_files/en sources gradientcolor [SFML Wiki].html"><div class="no"><input type="hidden" name="do" value="edit"><input type="hidden" name="rev" value=""><input type="submit" value="Показать исходный текст" class="button" accesskey="v" title="Показать исходный текст [ALT+V]"></div></form>        <form class="button btn_revs" method="get" action="./en sources gradientcolor [SFML Wiki]_files/en sources gradientcolor [SFML Wiki].html"><div class="no"><input type="hidden" name="do" value="revisions"><input type="submit" value="История страницы" class="button" accesskey="o" title="История страницы [ALT+O]"></div></form>      </div>
+
+      <div class="bar-right" id="bar__topright">
+        <form class="button btn_recent" method="get" action="http://www.sfml-dev.org/wiki/"><div class="no"><input type="hidden" name="do" value="recent"><input type="submit" value="Недавние изменения" class="button" accesskey="r" title="Недавние изменения [ALT+R]"></div></form>        <form action="http://www.sfml-dev.org/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search"><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]"><input type="submit" value="Поиск" class="button" title="Поиск"><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+        <div class="breadcrumbs">
+      <span class="bchead">Вы посетили:</span> <span class="bcsep">»</span> <span class="curid"><a href="./en sources gradientcolor [SFML Wiki]_files/en sources gradientcolor [SFML Wiki].html" class="breadcrumbs" title="en:sources:gradientcolor">gradientcolor</a></span>          </div>
+    
+    
+  </div>
+  
+  
+  <div class="page">
+    <!-- wikipage start -->
+    <!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header" style="cursor: pointer;"><span id="toc__toggle" class="toc_close" style="cursor: pointer;"><span>−</span></span>Содержание</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="http://www.sfml-dev.org/wiki/en/sources/gradientcolor#use_case" class="toc">Use Case</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="http://www.sfml-dev.org/wiki/en/sources/gradientcolor#create_scale_color" class="toc">Create scale Color</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="http://www.sfml-dev.org/wiki/en/sources/gradientcolor#automtic_gradient" class="toc">Automtic Gradient</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="http://www.sfml-dev.org/wiki/en/sources/gradientcolor#colorscale_class" class="toc">ColorScale Class</a></span></div></li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+
+
+<h1><a name="use_case" id="use_case">Use Case</a></h1>
+<div class="level1">
+
+</div>
+
+<h2><a name="create_scale_color" id="create_scale_color">Create scale Color</a></h2>
+<div class="level2">
+
+<p>
+
+This class allow you to easily create a color gradient by adding a color and its position. It handle the creation of a color table. You can choose between two interpolation methods : Linear and Cosinus<br>
+
+<br>
+
+This picture show you the result of the next source code. <br>
+
+<br>
+
+ 
+<a href="http://www.sfml-dev.org/wiki/_detail/fr/sources/basicscalecolor.png?id=en%3Asources%3Agradientcolor&cache=cache" class="media" title="fr:sources:basicscalecolor.png"><img src="./en sources gradientcolor [SFML Wiki]_files/basicscalecolor.png" class="mediacenter" alt=""></a>
+</p>
+
+</div>
+
+<h5><a name="main.cpp" id="main.cpp">main.cpp</a></h5>
+<div class="level5">
+<pre class="code cpp"><span class="co2">#include "ColorScale.h"</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+&nbsp;
+	<span class="kw4">const</span> <span class="kw4">int</span> SIZE <span class="sy1">=</span> <span class="nu0">500</span>;
+	ColorScale gradient;
+	gradient.<span class="me1">insert</span><span class="br0">(</span><span class="nu0">0.0</span>,sf<span class="sy4">::</span><span class="me2">Color</span><span class="sy4">::</span><span class="me2">Red</span><span class="br0">)</span>;
+	gradient.<span class="me1">insert</span><span class="br0">(</span><span class="nu0">1.0</span>,sf<span class="sy4">::</span><span class="me2">Color</span><span class="sy4">::</span><span class="me2">Magenta</span><span class="br0">)</span>;
+	gradient.<span class="me1">insert</span><span class="br0">(</span><span class="nu0">2.0</span>,sf<span class="sy4">::</span><span class="me2">Color</span><span class="sy4">::</span><span class="me2">Blue</span><span class="br0">)</span>;
+	gradient.<span class="me1">insert</span><span class="br0">(</span><span class="nu0">3.0</span>,sf<span class="sy4">::</span><span class="me2">Color</span><span class="sy4">::</span><span class="me2">Cyan</span><span class="br0">)</span>;
+	gradient.<span class="me1">insert</span><span class="br0">(</span><span class="nu0">4.0</span>,sf<span class="sy4">::</span><span class="me2">Color</span><span class="sy4">::</span><span class="me2">Green</span><span class="br0">)</span>;
+	gradient.<span class="me1">insert</span><span class="br0">(</span><span class="nu0">5.0</span>,sf<span class="sy4">::</span><span class="me2">Color</span><span class="sy4">::</span><span class="me2">Yellow</span><span class="br0">)</span>;
+	gradient.<span class="me1">insert</span><span class="br0">(</span><span class="nu0">6.0</span>,sf<span class="sy4">::</span><span class="me2">Color</span><span class="sy4">::</span><span class="me2">Red</span><span class="br0">)</span>;
+&nbsp;
+&nbsp;
+	sf<span class="sy4">::</span><span class="me2">Color*</span> tab <span class="sy1">=</span><span class="kw3">new</span> sf<span class="sy4">::</span><span class="me2">Color</span><span class="br0">[</span>SIZE<span class="br0">]</span>;
+	gradient.<span class="me1">fillTab</span><span class="br0">(</span>tab,SIZE<span class="br0">)</span>;
+&nbsp;
+	sf<span class="sy4">::</span><span class="me2">RenderWindow</span> App<span class="br0">(</span>sf<span class="sy4">::</span><span class="me2">VideoMode</span><span class="br0">(</span>SIZE, SIZE, <span class="nu0">32</span><span class="br0">)</span>, <span class="st0">"Gradient"</span><span class="br0">)</span>;
+	App.<span class="me1">SetFramerateLimit</span><span class="br0">(</span><span class="nu0">30</span><span class="br0">)</span>;
+&nbsp;
+	sf<span class="sy4">::</span><span class="me2">Image</span> image<span class="br0">(</span>SIZE,SIZE<span class="br0">)</span>;
+	<span class="kw1">for</span><span class="br0">(</span><span class="kw4">int</span> i<span class="sy1">=</span><span class="nu0">0</span>;i<span class="sy1">&lt;</span>SIZE;i<span class="sy2">++</span><span class="br0">)</span>
+	<span class="br0">{</span>
+		<span class="kw1">for</span><span class="br0">(</span><span class="kw4">int</span> j<span class="sy1">=</span><span class="nu0">0</span>;j<span class="sy1">&lt;</span>SIZE;j<span class="sy2">++</span><span class="br0">)</span>
+		<span class="br0">{</span>
+			image.<span class="me1">SetPixel</span><span class="br0">(</span>i,j,tab<span class="br0">[</span>j<span class="br0">]</span><span class="br0">)</span>;
+		<span class="br0">}</span>		
+	<span class="br0">}</span>
+&nbsp;
+	sf<span class="sy4">::</span><span class="me2">Sprite</span> sprite<span class="br0">(</span>image<span class="br0">)</span>;
+&nbsp;
+	<span class="kw1">while</span><span class="br0">(</span>App.<span class="me1">IsOpened</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
+	<span class="br0">{</span>
+		sf<span class="sy4">::</span><span class="me2">Event</span> Event;
+		<span class="kw1">while</span> <span class="br0">(</span>App.<span class="me1">GetEvent</span><span class="br0">(</span>Event<span class="br0">)</span><span class="br0">)</span> 
+		<span class="br0">{</span>
+			<span class="kw1">if</span> <span class="br0">(</span>Event.<span class="me1">Type</span><span class="sy1">==</span>sf<span class="sy4">::</span><span class="me2">Event</span><span class="sy4">::</span><span class="me2">Closed</span><span class="br0">)</span>
+			<span class="br0">{</span>
+				App.<span class="me1">Close</span><span class="br0">(</span><span class="br0">)</span>;
+			<span class="br0">}</span> 
+		<span class="br0">}</span>
+&nbsp;
+		App.<span class="me1">Clear</span><span class="br0">(</span><span class="br0">)</span>;
+		App.<span class="me1">Draw</span><span class="br0">(</span>sprite<span class="br0">)</span>;
+		App.<span class="me1">Display</span><span class="br0">(</span><span class="br0">)</span>;
+	<span class="br0">}</span>
+&nbsp;
+&nbsp;
+	<span class="kw3">delete</span><span class="br0">[</span><span class="br0">]</span> tab;	
+	<span class="kw1">return</span> <span class="nu0">0</span>;
+<span class="br0">}</span></pre>
+</div>
+
+<h2><a name="automtic_gradient" id="automtic_gradient">Automtic Gradient</a></h2>
+<div class="level2">
+
+<p>
+
+Previously we have create a scale color and trying to draw it by ourselves. But this class also konw how to draw it on a picture. First create your scale color then your picture and choose two point (which can be outside the picture). And tthis class will draw it for you. You can draw for type of gradient :linear, radial, circle and reflexion.<br>
+
+There you have an example of each of them and the source code which has created them. 
+</p>
+
+<p>
+<a href="http://www.sfml-dev.org/wiki/_detail/fr/sources/reflexgradiant.png?id=en%3Asources%3Agradientcolor&cache=cache" class="media" title="fr:sources:reflexgradiant.png"><img src="./en sources gradientcolor [SFML Wiki]_files/reflexgradiant.png" class="mediacenter" alt=""></a> <a href="http://www.sfml-dev.org/wiki/_detail/fr/sources/circlegradiant.png?id=en%3Asources%3Agradientcolor&cache=cache" class="media" title="fr:sources:circlegradiant.png"><img src="./en sources gradientcolor [SFML Wiki]_files/circlegradiant.png" class="mediacenter" alt=""></a> <a href="http://www.sfml-dev.org/wiki/_detail/fr/sources/lineargradiant.png?id=en%3Asources%3Agradientcolor&cache=cache" class="media" title="fr:sources:lineargradiant.png"><img src="./en sources gradientcolor [SFML Wiki]_files/lineargradiant.png" class="mediacenter" alt=""></a> <a href="http://www.sfml-dev.org/wiki/_detail/fr/sources/radialgradiant.png?id=en%3Asources%3Agradientcolor&cache=cache" class="media" title="fr:sources:radialgradiant.png"><img src="./en sources gradientcolor [SFML Wiki]_files/radialgradiant.png" class="mediacenter" alt=""></a>
+</p>
+<pre class="code cpp"><span class="co2">#include &lt;SFML/Graphics.hpp&gt;</span>
+<span class="co2">#include "ColorScale.h"</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+&nbsp;
+	<span class="kw4">const</span> <span class="kw4">int</span> SIZE <span class="sy1">=</span> <span class="nu0">500</span>;
+	ColorScale gradient;
+	gradient.<span class="me1">insert</span><span class="br0">(</span><span class="nu0">0.0</span>,sf<span class="sy4">::</span><span class="me2">Color</span><span class="sy4">::</span><span class="me2">Red</span><span class="br0">)</span>;
+	gradient.<span class="me1">insert</span><span class="br0">(</span><span class="nu0">1.0</span>,sf<span class="sy4">::</span><span class="me2">Color</span><span class="sy4">::</span><span class="me2">Magenta</span><span class="br0">)</span>;
+	gradient.<span class="me1">insert</span><span class="br0">(</span><span class="nu0">2.0</span>,sf<span class="sy4">::</span><span class="me2">Color</span><span class="sy4">::</span><span class="me2">Blue</span><span class="br0">)</span>;
+	gradient.<span class="me1">insert</span><span class="br0">(</span><span class="nu0">3.0</span>,sf<span class="sy4">::</span><span class="me2">Color</span><span class="sy4">::</span><span class="me2">Cyan</span><span class="br0">)</span>;
+	gradient.<span class="me1">insert</span><span class="br0">(</span><span class="nu0">4.0</span>,sf<span class="sy4">::</span><span class="me2">Color</span><span class="sy4">::</span><span class="me2">Green</span><span class="br0">)</span>;
+	gradient.<span class="me1">insert</span><span class="br0">(</span><span class="nu0">5.0</span>,sf<span class="sy4">::</span><span class="me2">Color</span><span class="sy4">::</span><span class="me2">Yellow</span><span class="br0">)</span>;
+	gradient.<span class="me1">insert</span><span class="br0">(</span><span class="nu0">6.0</span>,sf<span class="sy4">::</span><span class="me2">Color</span><span class="sy4">::</span><span class="me2">Red</span><span class="br0">)</span>;
+&nbsp;
+&nbsp;
+	sf<span class="sy4">::</span><span class="me2">Image</span> image<span class="br0">(</span>SIZE,SIZE<span class="br0">)</span>;
+	gradient.<span class="me1">draw</span><span class="br0">(</span>image,sf<span class="sy4">::</span><span class="me2">Vector2f</span><span class="br0">(</span><span class="nu0">250.0</span>,<span class="nu0">250.0</span><span class="br0">)</span>,sf<span class="sy4">::</span><span class="me2">Vector2f</span><span class="br0">(</span><span class="nu0">200.0</span>,<span class="nu0">0.0</span><span class="br0">)</span>,GradientStyle<span class="sy4">::</span><span class="me2">Radial</span><span class="br0">)</span>;
+&nbsp;
+	sf<span class="sy4">::</span><span class="me2">Sprite</span> sprite<span class="br0">(</span>image<span class="br0">)</span>;
+	sf<span class="sy4">::</span><span class="me2">RenderWindow</span> App<span class="br0">(</span>sf<span class="sy4">::</span><span class="me2">VideoMode</span><span class="br0">(</span>SIZE, SIZE, <span class="nu0">32</span><span class="br0">)</span>, <span class="st0">"Gradient"</span><span class="br0">)</span>;
+	App.<span class="me1">Draw</span><span class="br0">(</span>sprite<span class="br0">)</span>;
+	App.<span class="me1">Display</span><span class="br0">(</span><span class="br0">)</span>;
+	App.<span class="me1">SetFramerateLimit</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span>;
+&nbsp;
+	<span class="kw1">while</span><span class="br0">(</span>App.<span class="me1">IsOpened</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
+	<span class="br0">{</span>
+		sf<span class="sy4">::</span><span class="me2">Event</span> Event;
+		<span class="kw1">while</span><span class="br0">(</span>App.<span class="me1">GetEvent</span><span class="br0">(</span>Event<span class="br0">)</span><span class="br0">)</span>;
+		App.<span class="me1">Display</span><span class="br0">(</span><span class="br0">)</span>;
+	<span class="br0">}</span>
+&nbsp;
+	<span class="kw1">return</span> <span class="nu0">0</span>;
+<span class="br0">}</span></pre>
+</div>
+
+<h1><a name="colorscale_class" id="colorscale_class">ColorScale Class</a></h1>
+<div class="level1">
+
+</div>
+
+<h5><a name="colorscale.h" id="colorscale.h">ColorScale.h</a></h5>
+<div class="level5">
+<pre class="code cpp"><span class="coMULTI">/*
+ *  ColorScale.h
+ *
+ *  Created by mooglwy on 31/10/10.
+ *
+ *  This software is provided 'as-is', without any express or
+ *  implied warranty. In no event will the authors be held
+ *  liable for any damages arising from the use of this software.
+ *  
+ *  Permission is granted to anyone to use this software for any purpose,
+ *  including commercial applications, and to alter it and redistribute
+ *  it freely, subject to the following restrictions:
+ *  
+ *  1. The origin of this software must not be misrepresented;
+ *     you must not claim that you wrote the original software.
+ *     If you use this software in a product, an acknowledgment
+ *     in the product documentation would be appreciated but
+ *     is not required.
+ *  
+ *  2. Altered source versions must be plainly marked as such,
+ *     and must not be misrepresented as being the original software.
+ *  
+ *  3. This notice may not be removed or altered from any
+ *     source distribution.
+ *
+ */</span>
+&nbsp;
+<span class="co2">#ifndef _COLOR_SCALE_</span>
+<span class="co2">#define _COLOR_SCALE_</span>
+<span class="co2">#include &lt;map&gt;</span>
+<span class="co2">#include &lt;SFML/Graphics/Color.hpp&gt;</span>
+<span class="co2">#include &lt;SFML/Graphics.hpp&gt;</span>
+&nbsp;
+<span class="kw2">namespace</span> InterpolationFunction 
+<span class="br0">{</span>
+	<span class="kw2">enum</span> InterpolationFunction
+	<span class="br0">{</span>
+		Linear,
+		Cosinus
+	<span class="br0">}</span>;
+<span class="br0">}</span>
+&nbsp;
+<span class="kw2">namespace</span> GradientStyle 
+<span class="br0">{</span>
+	<span class="kw2">enum</span> GradientStyle 
+	<span class="br0">{</span>
+		Linear,
+		Circle,
+		Radial,
+		Reflex
+	<span class="br0">}</span>;
+<span class="br0">}</span>
+&nbsp;
+<span class="kw2">class</span> ColorScale <span class="sy4">:</span> <span class="kw2">protected</span> std<span class="sy4">::</span><span class="me2">map</span><span class="sy1">&lt;</span><span class="kw4">double</span>,sf<span class="sy4">::</span><span class="me2">Color</span><span class="sy1">&gt;</span>
+<span class="br0">{</span>
+<span class="kw2">public</span><span class="sy4">:</span>
+&nbsp;
+	ColorScale<span class="br0">(</span><span class="br0">)</span>;
+	<span class="kw4">bool</span> insert<span class="br0">(</span><span class="kw4">double</span> position, sf<span class="sy4">::</span><span class="me2">Color</span> color<span class="br0">)</span>;
+&nbsp;
+	<span class="kw4">void</span> fillTab<span class="br0">(</span>sf<span class="sy4">::</span><span class="me2">Color*</span> colorTab, <span class="kw4">int</span> size, InterpolationFunction<span class="sy4">::</span><span class="me2">InterpolationFunction</span> function <span class="sy1">=</span> InterpolationFunction<span class="sy4">::</span><span class="me2">Cosinus</span><span class="br0">)</span> <span class="kw4">const</span>;
+	<span class="kw4">void</span> draw<span class="br0">(</span>sf<span class="sy4">::</span><span class="me2">Image</span><span class="sy3">&amp;</span>,<span class="kw4">const</span> sf<span class="sy4">::</span><span class="me2">Vector2f</span><span class="sy3">&amp;</span> start,<span class="kw4">const</span> sf<span class="sy4">::</span><span class="me2">Vector2f</span><span class="sy3">&amp;</span> end,GradientStyle<span class="sy4">::</span><span class="me2">GradientStyle</span> style<span class="sy1">=</span>GradientStyle<span class="sy4">::</span><span class="me2">Linear</span>, <span class="kw4">int</span> size <span class="sy1">=</span> <span class="nu0">500</span><span class="br0">)</span> <span class="kw4">const</span>;
+&nbsp;
+<span class="br0">}</span>;
+&nbsp;
+&nbsp;
+<span class="co2">#endif //end of _COLOR_SCALE_</span></pre>
+</div>
+
+<h5><a name="colorscale.cpp" id="colorscale.cpp">ColorScale.cpp</a></h5>
+<div class="level5">
+<pre class="code cpp"><span class="coMULTI">/*
+ *  ColorScale.cpp
+ *
+ *  Created by mooglwy on 31/10/10.
+ *
+ *  This software is provided 'as-is', without any express or
+ *  implied warranty. In no event will the authors be held
+ *  liable for any damages arising from the use of this software.
+ *  
+ *  Permission is granted to anyone to use this software for any purpose,
+ *  including commercial applications, and to alter it and redistribute
+ *  it freely, subject to the following restrictions:
+ *  
+ *  1. The origin of this software must not be misrepresented;
+ *     you must not claim that you wrote the original software.
+ *     If you use this software in a product, an acknowledgment
+ *     in the product documentation would be appreciated but
+ *     is not required.
+ *  
+ *  2. Altered source versions must be plainly marked as such,
+ *     and must not be misrepresented as being the original software.
+ *  
+ *  3. This notice may not be removed or altered from any
+ *     source distribution.
+ *
+ */</span>
+&nbsp;
+<span class="co2">#include "ColorScale.h"</span>
+<span class="co2">#include &lt;math.h&gt;</span>
+&nbsp;
+<span class="kw4">const</span> <span class="kw4">double</span> PI <span class="sy1">=</span> <span class="nu0">3.1415926535</span>;
+&nbsp;
+<span class="kw4">double</span> linearInterpolation<span class="br0">(</span><span class="kw4">double</span> v1, <span class="kw4">double</span> v2, <span class="kw4">double</span> mu<span class="br0">)</span>
+<span class="br0">{</span>
+	<span class="kw1">return</span><span class="br0">(</span>v1<span class="sy2">*</span><span class="br0">(</span><span class="nu0">1</span><span class="sy2">-</span>mu<span class="br0">)</span><span class="sy2">+</span>v2<span class="sy2">*</span>mu<span class="br0">)</span>;
+<span class="br0">}</span>
+&nbsp;
+<span class="kw4">double</span> interpolateCosinus<span class="br0">(</span><span class="kw4">double</span> y1, <span class="kw4">double</span> y2, <span class="kw4">double</span> mu<span class="br0">)</span>
+<span class="br0">{</span>
+	<span class="kw4">double</span> mu2;
+&nbsp;
+	mu2 <span class="sy1">=</span> <span class="br0">(</span><span class="nu0">1</span><span class="sy2">-</span><span class="kw3">cos</span><span class="br0">(</span>mu<span class="sy2">*</span>PI<span class="br0">)</span><span class="br0">)</span><span class="sy2">/</span><span class="nu0">2</span>;
+	<span class="kw1">return</span> <span class="br0">(</span>y1<span class="sy2">*</span><span class="br0">(</span><span class="nu0">1</span><span class="sy2">-</span>mu2<span class="br0">)</span><span class="sy2">+</span>y2<span class="sy2">*</span>mu2<span class="br0">)</span>;
+<span class="br0">}</span>
+&nbsp;
+sf<span class="sy4">::</span><span class="me2">Color</span> GradientLinear<span class="br0">(</span>sf<span class="sy4">::</span><span class="me2">Color*</span> colorTab,<span class="kw4">int</span> size,<span class="kw4">const</span> sf<span class="sy4">::</span><span class="me2">Vector2f</span><span class="sy3">&amp;</span> start,<span class="kw4">const</span> sf<span class="sy4">::</span><span class="me2">Vector2f</span><span class="sy3">&amp;</span> end,<span class="kw4">int</span> x,<span class="kw4">int</span> y<span class="br0">)</span>
+<span class="br0">{</span>
+	sf<span class="sy4">::</span><span class="me2">Vector2f</span> dir  <span class="sy1">=</span> end<span class="sy2">-</span>start;
+	sf<span class="sy4">::</span><span class="me2">Vector2f</span> pix  <span class="sy1">=</span> sf<span class="sy4">::</span><span class="me2">Vector2f</span><span class="br0">(</span>x,y<span class="br0">)</span><span class="sy2">-</span>start; 
+	<span class="kw4">double</span> dotProduct <span class="sy1">=</span> pix.<span class="me1">x*dir</span>.<span class="me1">x</span><span class="sy2">+</span>pix.<span class="me1">y*dir</span>.<span class="me1">y</span>;
+	dotProduct       <span class="sy2">*</span><span class="sy1">=</span> <span class="br0">(</span>size<span class="nu0">-1</span><span class="br0">)</span><span class="sy2">/</span><span class="br0">(</span>dir.<span class="me1">x*dir</span>.<span class="me1">x</span><span class="sy2">+</span>dir.<span class="me1">y*dir</span>.<span class="me1">y</span><span class="br0">)</span>;
+&nbsp;
+	<span class="kw1">if</span><span class="br0">(</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span>dotProduct <span class="sy1">&lt;</span> <span class="nu0">0.0</span>      <span class="br0">)</span> <span class="kw1">return</span> colorTab<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span>;
+	<span class="kw1">if</span><span class="br0">(</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span>dotProduct <span class="sy1">&gt;</span> <span class="br0">(</span>size<span class="nu0">-1</span><span class="br0">)</span> <span class="br0">)</span> <span class="kw1">return</span> colorTab<span class="br0">[</span>size<span class="nu0">-1</span><span class="br0">]</span>;
+	<span class="kw1">return</span> colorTab<span class="br0">[</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span>dotProduct<span class="br0">]</span>;
+<span class="br0">}</span>
+&nbsp;
+sf<span class="sy4">::</span><span class="me2">Color</span> GradientCircle<span class="br0">(</span>sf<span class="sy4">::</span><span class="me2">Color*</span> colorTab,<span class="kw4">int</span> size,<span class="kw4">const</span> sf<span class="sy4">::</span><span class="me2">Vector2f</span><span class="sy3">&amp;</span> start,<span class="kw4">const</span> sf<span class="sy4">::</span><span class="me2">Vector2f</span><span class="sy3">&amp;</span> end,<span class="kw4">int</span> x,<span class="kw4">int</span> y<span class="br0">)</span>
+<span class="br0">{</span>
+	sf<span class="sy4">::</span><span class="me2">Vector2f</span> v_radius  <span class="sy1">=</span> end<span class="sy2">-</span>start;
+	<span class="kw4">double</span> radius          <span class="sy1">=</span> <span class="kw3">sqrt</span><span class="br0">(</span>v_radius.<span class="me1">x*v_radius</span>.<span class="me1">x</span><span class="sy2">+</span>v_radius.<span class="me1">y*v_radius</span>.<span class="me1">y</span><span class="br0">)</span>;
+	sf<span class="sy4">::</span><span class="me2">Vector2f</span> pix       <span class="sy1">=</span> sf<span class="sy4">::</span><span class="me2">Vector2f</span><span class="br0">(</span>x,y<span class="br0">)</span><span class="sy2">-</span>start;
+	<span class="kw4">double</span> dist            <span class="sy1">=</span> <span class="kw3">sqrt</span><span class="br0">(</span>pix.<span class="me1">x*pix</span>.<span class="me1">x</span><span class="sy2">+</span>pix.<span class="me1">y*pix</span>.<span class="me1">y</span><span class="br0">)</span>;
+	dist                  <span class="sy2">*</span><span class="sy1">=</span> <span class="br0">(</span>size<span class="nu0">-1</span><span class="br0">)</span><span class="sy2">/</span>radius;
+&nbsp;
+	<span class="kw1">if</span><span class="br0">(</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span>dist <span class="sy1">&lt;</span> <span class="nu0">0.0</span>      <span class="br0">)</span> <span class="kw1">return</span> colorTab<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span>;
+	<span class="kw1">if</span><span class="br0">(</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span>dist <span class="sy1">&gt;</span> <span class="br0">(</span>size<span class="nu0">-1</span><span class="br0">)</span> <span class="br0">)</span> <span class="kw1">return</span> colorTab<span class="br0">[</span>size<span class="nu0">-1</span><span class="br0">]</span>;
+	<span class="kw1">return</span> colorTab<span class="br0">[</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span>dist<span class="br0">]</span>;
+<span class="br0">}</span>
+&nbsp;
+sf<span class="sy4">::</span><span class="me2">Color</span> GradientRadial<span class="br0">(</span>sf<span class="sy4">::</span><span class="me2">Color*</span> colorTab,<span class="kw4">int</span> size,<span class="kw4">const</span> sf<span class="sy4">::</span><span class="me2">Vector2f</span><span class="sy3">&amp;</span> start,<span class="kw4">const</span> sf<span class="sy4">::</span><span class="me2">Vector2f</span><span class="sy3">&amp;</span> end,<span class="kw4">int</span> x,<span class="kw4">int</span> y<span class="br0">)</span>
+<span class="br0">{</span>
+	sf<span class="sy4">::</span><span class="me2">Vector2f</span> base     <span class="sy1">=</span> end<span class="sy2">-</span>start;
+	base                 <span class="sy2">/</span><span class="sy1">=</span> <span class="br0">(</span><span class="kw4">float</span><span class="br0">)</span><span class="kw3">sqrt</span><span class="br0">(</span>base.<span class="me1">x*base</span>.<span class="me1">x</span><span class="sy2">+</span>base.<span class="me1">y*base</span>.<span class="me1">y</span><span class="br0">)</span>;
+	sf<span class="sy4">::</span><span class="me2">Vector2f</span> pix      <span class="sy1">=</span> sf<span class="sy4">::</span><span class="me2">Vector2f</span><span class="br0">(</span>x,y<span class="br0">)</span><span class="sy2">-</span>start;
+	pix                  <span class="sy2">/</span><span class="sy1">=</span> <span class="br0">(</span><span class="kw4">float</span><span class="br0">)</span><span class="kw3">sqrt</span><span class="br0">(</span>pix.<span class="me1">x*pix</span>.<span class="me1">x</span><span class="sy2">+</span>pix.<span class="me1">y*pix</span>.<span class="me1">y</span><span class="br0">)</span>;
+	<span class="kw4">double</span> angle          <span class="sy1">=</span> <span class="kw3">acos</span><span class="br0">(</span>pix.<span class="me1">x*base</span>.<span class="me1">x</span><span class="sy2">+</span>pix.<span class="me1">y*base</span>.<span class="me1">y</span><span class="br0">)</span>;
+	<span class="kw4">double</span> <span class="kw3">aSin</span>           <span class="sy1">=</span> pix.<span class="me1">x*base</span>.<span class="me1">y</span><span class="sy2">-</span>pix.<span class="me1">y*base</span>.<span class="me1">x</span>;
+	<span class="kw1">if</span><span class="br0">(</span> <span class="kw3">aSin</span> <span class="sy1">&lt;</span> <span class="nu0">0</span><span class="br0">)</span> angle   <span class="sy1">=</span> <span class="nu0">2</span><span class="sy2">*</span>PI<span class="sy2">-</span>angle;
+	angle                <span class="sy2">*</span><span class="sy1">=</span> <span class="br0">(</span>size<span class="nu0">-1</span><span class="br0">)</span><span class="sy2">/</span><span class="br0">(</span><span class="nu0">2</span><span class="sy2">*</span>PI<span class="br0">)</span>;
+&nbsp;
+&nbsp;
+	<span class="kw1">if</span><span class="br0">(</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span>angle <span class="sy1">&lt;</span> <span class="nu0">0.0</span>      <span class="br0">)</span> <span class="kw1">return</span> colorTab<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span>;
+	<span class="kw1">if</span><span class="br0">(</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span>angle <span class="sy1">&gt;</span> <span class="br0">(</span>size<span class="nu0">-1</span><span class="br0">)</span> <span class="br0">)</span> <span class="kw1">return</span> colorTab<span class="br0">[</span>size<span class="nu0">-1</span><span class="br0">]</span>;
+	<span class="kw1">return</span> colorTab<span class="br0">[</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span>angle<span class="br0">]</span>;
+<span class="br0">}</span>
+&nbsp;
+sf<span class="sy4">::</span><span class="me2">Color</span> GradientReflex<span class="br0">(</span>sf<span class="sy4">::</span><span class="me2">Color*</span> colorTab,<span class="kw4">int</span> size,<span class="kw4">const</span> sf<span class="sy4">::</span><span class="me2">Vector2f</span><span class="sy3">&amp;</span> start,<span class="kw4">const</span> sf<span class="sy4">::</span><span class="me2">Vector2f</span><span class="sy3">&amp;</span> end,<span class="kw4">int</span> x,<span class="kw4">int</span> y<span class="br0">)</span>
+<span class="br0">{</span>
+	sf<span class="sy4">::</span><span class="me2">Vector2f</span> dir  <span class="sy1">=</span> end<span class="sy2">-</span>start;
+	sf<span class="sy4">::</span><span class="me2">Vector2f</span> pix  <span class="sy1">=</span> sf<span class="sy4">::</span><span class="me2">Vector2f</span><span class="br0">(</span>x,y<span class="br0">)</span><span class="sy2">-</span>start; 
+	<span class="kw4">double</span> dotProduct <span class="sy1">=</span> pix.<span class="me1">x*dir</span>.<span class="me1">x</span><span class="sy2">+</span>pix.<span class="me1">y*dir</span>.<span class="me1">y</span>;
+	dotProduct       <span class="sy2">*</span><span class="sy1">=</span> <span class="br0">(</span>size<span class="nu0">-1</span><span class="br0">)</span><span class="sy2">/</span><span class="br0">(</span>dir.<span class="me1">x*dir</span>.<span class="me1">x</span><span class="sy2">+</span>dir.<span class="me1">y*dir</span>.<span class="me1">y</span><span class="br0">)</span>;
+	dotProduct        <span class="sy1">=</span> <span class="br0">(</span>dotProduct<span class="sy1">&gt;</span><span class="nu0">0</span><span class="br0">)</span>?dotProduct<span class="sy4">:</span><span class="sy2">-</span>dotProduct;
+&nbsp;
+	<span class="kw1">if</span><span class="br0">(</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span>dotProduct <span class="sy1">&lt;</span> <span class="nu0">0.0</span>      <span class="br0">)</span> <span class="kw1">return</span> colorTab<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span>;
+	<span class="kw1">if</span><span class="br0">(</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span>dotProduct <span class="sy1">&gt;</span> <span class="br0">(</span>size<span class="nu0">-1</span><span class="br0">)</span> <span class="br0">)</span> <span class="kw1">return</span> colorTab<span class="br0">[</span>size<span class="nu0">-1</span><span class="br0">]</span>;
+	<span class="kw1">return</span> colorTab<span class="br0">[</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span>dotProduct<span class="br0">]</span>;
+<span class="br0">}</span>
+&nbsp;
+ColorScale<span class="sy4">::</span><span class="me2">ColorScale</span><span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="kw4">bool</span> ColorScale<span class="sy4">::</span><span class="me2">insert</span><span class="br0">(</span><span class="kw4">double</span> position, sf<span class="sy4">::</span><span class="me2">Color</span> color<span class="br0">)</span>
+<span class="br0">{</span>
+	std<span class="sy4">::</span><span class="me2">pair</span><span class="sy1">&lt;</span> ColorScale<span class="sy4">::</span><span class="me2">iterator</span>,<span class="kw4">bool</span> <span class="sy1">&gt;</span> ret <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">map</span><span class="sy1">&lt;</span><span class="kw4">double</span>,sf<span class="sy4">::</span><span class="me2">Color</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">insert</span><span class="br0">(</span>std<span class="sy4">::</span><span class="me2">pair</span><span class="sy1">&lt;</span><span class="kw4">double</span>, sf<span class="sy4">::</span><span class="me2">Color</span><span class="sy1">&gt;</span><span class="br0">(</span>position,color<span class="br0">)</span><span class="br0">)</span>;
+	<span class="kw1">return</span> ret.<span class="me1">second</span>;
+<span class="br0">}</span>
+&nbsp;
+&nbsp;
+<span class="co2">#define ABS(a) ((a&gt;0)?(a):0)</span>
+&nbsp;
+<span class="kw4">void</span> ColorScale<span class="sy4">::</span><span class="me2">fillTab</span><span class="br0">(</span>sf<span class="sy4">::</span><span class="me2">Color*</span> colorTab, <span class="kw4">int</span> size,InterpolationFunction<span class="sy4">::</span><span class="me2">InterpolationFunction</span> function<span class="br0">)</span> <span class="kw4">const</span>
+<span class="br0">{</span>
+&nbsp;
+	ColorScale<span class="sy4">::</span><span class="me2">const_iterator</span> start <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">map</span><span class="sy1">&lt;</span><span class="kw4">double</span>,sf<span class="sy4">::</span><span class="me2">Color</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">begin</span><span class="br0">(</span><span class="br0">)</span>;
+	ColorScale<span class="sy4">::</span><span class="me2">const_iterator</span> last  <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">map</span><span class="sy1">&lt;</span><span class="kw4">double</span>,sf<span class="sy4">::</span><span class="me2">Color</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">end</span><span class="br0">(</span><span class="br0">)</span>;
+	last<span class="sy2">--</span>;
+&nbsp;
+	<span class="kw4">double</span> pos <span class="sy1">=</span> <span class="nu0">0.0</span>;
+	<span class="kw4">double</span> distance <span class="sy1">=</span> last<span class="sy2">-</span><span class="sy1">&gt;</span>first <span class="sy2">-</span> start<span class="sy2">-</span><span class="sy1">&gt;</span>first;
+	ColorScale<span class="sy4">::</span><span class="me2">const_iterator</span> it <span class="sy1">=</span>  start;
+&nbsp;
+	<span class="kw4">double</span><span class="br0">(</span><span class="sy2">*</span>pFunction<span class="br0">)</span><span class="br0">(</span><span class="kw4">double</span>,<span class="kw4">double</span>,<span class="kw4">double</span><span class="br0">)</span>;
+&nbsp;
+	<span class="kw1">switch</span> <span class="br0">(</span>function<span class="br0">)</span> 
+	<span class="br0">{</span>
+		<span class="kw1">case</span> InterpolationFunction<span class="sy4">::</span><span class="me2">Cosinus</span><span class="sy4">:</span> pFunction <span class="sy1">=</span> interpolateCosinus;  <span class="kw1">break</span>;
+		<span class="kw1">case</span> InterpolationFunction<span class="sy4">::</span><span class="me2">Linear</span> <span class="sy4">:</span> pFunction <span class="sy1">=</span> linearInterpolation; <span class="kw1">break</span>;
+		<span class="kw1">default</span><span class="sy4">:</span> pFunction <span class="sy1">=</span> interpolateCosinus;  <span class="kw1">break</span>;
+&nbsp;
+	<span class="br0">}</span>
+	<span class="kw1">while</span><span class="br0">(</span>it<span class="sy3">!</span><span class="sy1">=</span>last<span class="br0">)</span>
+	<span class="br0">{</span>
+		sf<span class="sy4">::</span><span class="me2">Color</span> startColor <span class="sy1">=</span> it<span class="sy2">-</span><span class="sy1">&gt;</span>second;
+		<span class="kw4">double</span>    startPos   <span class="sy1">=</span> it<span class="sy2">-</span><span class="sy1">&gt;</span>first;
+		it<span class="sy2">++</span>;
+		sf<span class="sy4">::</span><span class="me2">Color</span> endColor   <span class="sy1">=</span> it<span class="sy2">-</span><span class="sy1">&gt;</span>second;
+		<span class="kw4">double</span>    endPos     <span class="sy1">=</span> it<span class="sy2">-</span><span class="sy1">&gt;</span>first;
+		<span class="kw4">double</span> nb_color         <span class="sy1">=</span> <span class="br0">(</span><span class="br0">(</span>endPos<span class="sy2">-</span>startPos<span class="br0">)</span><span class="sy2">*</span><span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span>size<span class="sy2">/</span>distance<span class="br0">)</span>;
+&nbsp;
+		<span class="kw1">for</span><span class="br0">(</span><span class="kw4">int</span> i <span class="sy1">=</span> <span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span>pos;i<span class="sy1">&lt;=</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="br0">(</span>pos<span class="sy2">+</span>nb_color<span class="br0">)</span>;i<span class="sy2">++</span><span class="br0">)</span>
+		<span class="br0">{</span>
+			colorTab<span class="br0">[</span>i<span class="br0">]</span>.<span class="me1">r</span> <span class="sy1">=</span> <span class="br0">(</span><span class="kw4">unsigned</span> <span class="kw4">char</span><span class="br0">)</span>pFunction<span class="br0">(</span>startColor.<span class="me1">r</span>,endColor.<span class="me1">r</span>,<span class="kw3">ABS</span><span class="br0">(</span><span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span>i<span class="sy2">-</span>pos<span class="br0">)</span><span class="sy2">/</span><span class="br0">(</span>nb_color<span class="nu0">-1.0</span><span class="br0">)</span><span class="br0">)</span>;
+			colorTab<span class="br0">[</span>i<span class="br0">]</span>.<span class="me1">g</span> <span class="sy1">=</span> <span class="br0">(</span><span class="kw4">unsigned</span> <span class="kw4">char</span><span class="br0">)</span>pFunction<span class="br0">(</span>startColor.<span class="me1">g</span>,endColor.<span class="me1">g</span>,<span class="kw3">ABS</span><span class="br0">(</span><span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span>i<span class="sy2">-</span>pos<span class="br0">)</span><span class="sy2">/</span><span class="br0">(</span>nb_color<span class="nu0">-1.0</span><span class="br0">)</span><span class="br0">)</span>;
+			colorTab<span class="br0">[</span>i<span class="br0">]</span>.<span class="me1">b</span> <span class="sy1">=</span> <span class="br0">(</span><span class="kw4">unsigned</span> <span class="kw4">char</span><span class="br0">)</span>pFunction<span class="br0">(</span>startColor.<span class="me1">b</span>,endColor.<span class="me1">b</span>,<span class="kw3">ABS</span><span class="br0">(</span><span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span>i<span class="sy2">-</span>pos<span class="br0">)</span><span class="sy2">/</span><span class="br0">(</span>nb_color<span class="nu0">-1.0</span><span class="br0">)</span><span class="br0">)</span>;
+			colorTab<span class="br0">[</span>i<span class="br0">]</span>.<span class="me1">a</span> <span class="sy1">=</span> <span class="br0">(</span><span class="kw4">unsigned</span> <span class="kw4">char</span><span class="br0">)</span>pFunction<span class="br0">(</span>startColor.<span class="me1">a</span>,endColor.<span class="me1">a</span>,<span class="kw3">ABS</span><span class="br0">(</span><span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span>i<span class="sy2">-</span>pos<span class="br0">)</span><span class="sy2">/</span><span class="br0">(</span>nb_color<span class="nu0">-1.0</span><span class="br0">)</span><span class="br0">)</span>;
+		<span class="br0">}</span>
+		pos<span class="sy2">+</span><span class="sy1">=</span>nb_color;
+	<span class="br0">}</span>
+&nbsp;
+<span class="br0">}</span>
+&nbsp;
+<span class="co2">#undef ABS</span>
+&nbsp;
+<span class="kw4">void</span> ColorScale<span class="sy4">::</span><span class="me2">draw</span><span class="br0">(</span>sf<span class="sy4">::</span><span class="me2">Image</span><span class="sy3">&amp;</span> img,<span class="kw4">const</span> sf<span class="sy4">::</span><span class="me2">Vector2f</span><span class="sy3">&amp;</span> start,<span class="kw4">const</span> sf<span class="sy4">::</span><span class="me2">Vector2f</span><span class="sy3">&amp;</span> end,GradientStyle<span class="sy4">::</span><span class="me2">GradientStyle</span> style, <span class="kw4">int</span> size<span class="br0">)</span> <span class="kw4">const</span>
+<span class="br0">{</span>
+&nbsp;
+	sf<span class="sy4">::</span><span class="me2">Color</span> <span class="br0">(</span><span class="sy2">*</span>pFunction<span class="br0">)</span><span class="br0">(</span>sf<span class="sy4">::</span><span class="me2">Color*</span>,<span class="kw4">int</span>,<span class="kw4">const</span> sf<span class="sy4">::</span><span class="me2">Vector2f</span><span class="sy3">&amp;</span>,<span class="kw4">const</span> sf<span class="sy4">::</span><span class="me2">Vector2f</span><span class="sy3">&amp;</span>,<span class="kw4">int</span>,<span class="kw4">int</span><span class="br0">)</span>;
+&nbsp;
+	sf<span class="sy4">::</span><span class="me2">Color*</span> tab <span class="sy1">=</span><span class="kw3">new</span> sf<span class="sy4">::</span><span class="me2">Color</span><span class="br0">[</span>size<span class="br0">]</span>;
+	fillTab<span class="br0">(</span>tab,size<span class="br0">)</span>;
+&nbsp;
+	<span class="kw1">switch</span> <span class="br0">(</span>style<span class="br0">)</span> 
+	<span class="br0">{</span>
+		<span class="kw1">case</span> GradientStyle<span class="sy4">::</span><span class="me2">Linear</span> <span class="sy4">:</span> pFunction <span class="sy1">=</span> GradientLinear; <span class="kw1">break</span>;
+		<span class="kw1">case</span> GradientStyle<span class="sy4">::</span><span class="me2">Circle</span> <span class="sy4">:</span> pFunction <span class="sy1">=</span> GradientCircle; <span class="kw1">break</span>;
+		<span class="kw1">case</span> GradientStyle<span class="sy4">::</span><span class="me2">Radial</span> <span class="sy4">:</span> pFunction <span class="sy1">=</span> GradientRadial; <span class="kw1">break</span>;
+		<span class="kw1">case</span> GradientStyle<span class="sy4">::</span><span class="me2">Reflex</span> <span class="sy4">:</span> pFunction <span class="sy1">=</span> GradientReflex; <span class="kw1">break</span>;
+&nbsp;
+		<span class="kw1">default</span><span class="sy4">:</span> pFunction <span class="sy1">=</span> GradientLinear;  <span class="kw1">break</span>;
+	<span class="br0">}</span>
+&nbsp;
+	<span class="kw1">for</span><span class="br0">(</span><span class="kw4">int</span> i<span class="sy1">=</span><span class="nu0">0</span>;i<span class="sy1">&lt;</span>img.<span class="me1">GetWidth</span><span class="br0">(</span><span class="br0">)</span>;i<span class="sy2">++</span><span class="br0">)</span>
+	<span class="br0">{</span>
+		<span class="kw1">for</span><span class="br0">(</span><span class="kw4">int</span> j<span class="sy1">=</span><span class="nu0">0</span>;j<span class="sy1">&lt;</span>img.<span class="me1">GetHeight</span><span class="br0">(</span><span class="br0">)</span>;j<span class="sy2">++</span><span class="br0">)</span>
+		<span class="br0">{</span>
+			img.<span class="me1">SetPixel</span><span class="br0">(</span>i,j,pFunction<span class="br0">(</span>tab,size,start,end,i,j<span class="br0">)</span><span class="br0">)</span>;
+		<span class="br0">}</span>		
+	<span class="br0">}</span>
+	<span class="kw3">delete</span><span class="br0">[</span><span class="br0">]</span> tab;
+<span class="br0">}</span></pre>
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <div class="doc">
+        en/sources/gradientcolor.txt · Последние изменения: 2010/11/01 19:02   mooglwy      </div>
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <form class="button btn_source" method="post" action="./en sources gradientcolor [SFML Wiki]_files/en sources gradientcolor [SFML Wiki].html"><div class="no"><input type="hidden" name="do" value="edit"><input type="hidden" name="rev" value=""><input type="submit" value="Показать исходный текст" class="button" accesskey="v" title="Показать исходный текст [ALT+V]"></div></form>        <form class="button btn_revs" method="get" action="./en sources gradientcolor [SFML Wiki]_files/en sources gradientcolor [SFML Wiki].html"><div class="no"><input type="hidden" name="do" value="revisions"><input type="submit" value="История страницы" class="button" accesskey="o" title="История страницы [ALT+O]"></div></form>      </div>
+      <div class="bar-right" id="bar__bottomright">
+                                <form class="button btn_login" method="get" action="./en sources gradientcolor [SFML Wiki]_files/en sources gradientcolor [SFML Wiki].html"><div class="no"><input type="hidden" name="do" value="login"><input type="hidden" name="sectok" value="4e21fa6c05c5cb67d1eb75088105d6c0"><input type="submit" value="Войти" class="button" title="Войти"></div></form>        <form class="button btn_index" method="get" action="./en sources gradientcolor [SFML Wiki]_files/en sources gradientcolor [SFML Wiki].html"><div class="no"><input type="hidden" name="do" value="index"><input type="submit" value="Все страницы" class="button" accesskey="x" title="Все страницы [ALT+X]"></div></form>        <a class="nolink" href="http://www.sfml-dev.org/wiki/en/sources/gradientcolor#dokuwiki__top"><input type="button" class="button" value="Наверх" onclick="window.scrollTo(0, 0)" title="Наверх"></a>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="footerinc">
+  <a href="http://www.sfml-dev.org/wiki/feed.php" title="Recent changes RSS feed"><img src="./en sources gradientcolor [SFML Wiki]_files/button-rss.png" width="80" height="15" alt="Recent changes RSS feed"></a>
+
+  <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/" rel="license" title="Creative Commons License"><img src="./en sources gradientcolor [SFML Wiki]_files/button-cc.gif" width="80" height="15" alt="Creative Commons License"></a>
+
+  <a href="http://wiki.splitbrain.org/wiki:donate" title="Donate"><img src="./en sources gradientcolor [SFML Wiki]_files/button-donate.gif" alt="Donate" width="80" height="15"></a>
+
+  <a href="http://www.php.net/" title="Powered by PHP"><img src="./en sources gradientcolor [SFML Wiki]_files/button-php.gif" width="80" height="15" alt="Powered by PHP"></a>
+
+  <a href="http://validator.w3.org/check/referer" title="Valid XHTML 1.0"><img src="./en sources gradientcolor [SFML Wiki]_files/button-xhtml.png" width="80" height="15" alt="Valid XHTML 1.0"></a>
+
+  <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3" title="Valid CSS"><img src="./en sources gradientcolor [SFML Wiki]_files/button-css.png" width="80" height="15" alt="Valid CSS"></a>
+
+  <a href="http://wiki.splitbrain.org/wiki:dokuwiki" title="Driven by DokuWiki"><img src="./en sources gradientcolor [SFML Wiki]_files/button-dw.png" width="80" height="15" alt="Driven by DokuWiki"></a>
+
+
+
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.0/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <prohibits rdf:resource="http://web.resource.org/cc/CommercialUse" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+-->
+
+
+</div>
+
+<div class="no"><img src="./en sources gradientcolor [SFML Wiki]_files/indexer.php" width="1" height="1" alt=""></div>
+
+
+</body></html>

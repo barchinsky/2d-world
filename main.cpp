@@ -17,6 +17,8 @@
 #include "Cloud.hpp"
 #include "Leave.hpp"
 #include "Part.hpp"
+#include "DisplayManager.hpp"
+#include "Sky.hpp"
 
 using namespace std;
 
@@ -24,22 +26,19 @@ int main()
 {
     srand(time(NULL));
 
-    sf::RenderWindow App(sf::VideoMode(1000,800,64), "Rain");
-    
-   sf::Font font;
- font.loadFromFile("fonts/arial.ttf");
+    sf::Font font;
+    font.loadFromFile("fonts/arial.ttf");
 
- sf::Text text("Loading...",font,30);
+    sf::Text text("Loading...",font,30);
  // Create a text
     text.setPosition(500,400);
     
-    App.draw(text);
-    App.display();
+    DisplayManager().getWindow().draw(text);
+    DisplayManager().getWindow().display();
 
-    App.setVerticalSyncEnabled(1);
+    DisplayManager().getWindow().setVerticalSyncEnabled(1);
 
     sf::Texture fgT; // foreground texture
-    sf::Texture bgT; // background texture
     sf::Texture fpT;
     sf::Texture nebulaT;
     sf::Texture birdT;
@@ -48,7 +47,6 @@ int main()
 
     //load textures
     fgT.loadFromFile("media/foreground.png");
-    bgT.loadFromFile("media/background.png");
     fpT.loadFromFile("media/fire/fireplace.png");
     nebulaT.loadFromFile("media/nebulas/big_galaxy.png");
     flameT.loadFromFile("media/fire/lightmini.png");
@@ -57,7 +55,6 @@ int main()
     nebulaT.setSmooth(1);
 
     sf::Sprite foreground(fgT); // set sprites
-    sf::Sprite background(bgT);
     sf::Sprite fireplace(fpT);
     sf::Sprite nebula(nebulaT);
 
@@ -103,49 +100,54 @@ int main()
     Moon moon; // init moon
     Bug bug(bugT); // init bug
     Light light; // init light
+    Sky sky(1000);
 
-    App.clear();
+    DisplayManager().getWindow().clear();
 
-    while( App.isOpen() ) // while application is working
+    int sleeptime = 0;
+
+    while( DisplayManager().getWindow().isOpen() ) // while DisplayManager().getWindow()lication is working
     {    
         World mw; // my world settings
+
+        const int windPower = mw.getWindPower();
         
-        sf::sleep(sf::seconds(0.009)); // offload CPU cycles
+        sf::sleep(sf::seconds(0.0)); // offload CPU cycles
 
         sf::Event event; // make event hendler
     
-        while(App.pollEvent(event)) // try if user don't close the window
+        while(DisplayManager().getWindow().pollEvent(event)) // try if user don't close the window
         {
-            if(event.type == sf::Event::Closed) { App.close(); } // close window
+            if(event.type == sf::Event::Closed) { DisplayManager().getWindow().close(); } // close window
             
             if( event.type == sf::Event::KeyPressed )
             {
-                if( event.key.code == sf::Keyboard::Escape ) { App.close(); }
+                if( event.key.code == sf::Keyboard::Escape ) { DisplayManager().getWindow().close(); }
             }
         }
         
-        App.draw( background ); // draw background
-        App.draw(nebula);
-        nebula.rotate(-0.01);
+         sky.update();
+
+        DisplayManager().getWindow().draw(nebula);
+        nebula.rotate(-0.02);
         
-        App.draw( moon.getMoon() ); //draw the moon
+        DisplayManager().getWindow().draw( moon.getMoon() ); //draw the moon
         moon.move(); // move moon
         
         for(int i = 0; i < mw.getCloudnes(); ++i) //draw clouds
         {
-            App.draw( clouds[i].getCloud() ); // draw cloud 
-            clouds[i].move( mw.getWindPower() ); // move cloud
+            clouds[i].update(); // move cloud
         } 
 
-        App.draw( foreground ); // draw foreground  
-        App.draw( fireplace );
+        DisplayManager().getWindow().draw( foreground ); // draw foreground  
+        DisplayManager().getWindow().draw( fireplace );
 
 
-        for(int i = 0; i < 500; ++i)
+        for(int i = 0; i < 300; ++i)
         {
                 if(!fire[i].getTimeout() ) // if drop timeout is 0
                 {
-                    App.draw( fire[i].move( mw.getWindPower() , -1.5, mw.getFlamePow()) ); //  move and drow the drop
+                    DisplayManager().getWindow().draw( fire[i].move( windPower , mw.getGravity(), mw.getFlamePow()) ); //  move and drow the drop
                 }
                 else // change drop timeout
                 {
@@ -161,10 +163,9 @@ int main()
             // light dislplaying
             if(light.getTimeout() < 15) // check light timeout, and draw it
             {
-                App.draw( light.getLight() ); // draw light
+                DisplayManager().getWindow().draw( light.getLight() ); // draw light
                 thunderSound.play();
                 rainSound.play();
-
             }
 
             if(light.getTimeout() == 0) // check light timeout, reset timeout and move light
@@ -176,13 +177,12 @@ int main()
             {
                 light.setTimeout( light.getTimeout() - 1 ); // decrease timeout
             }
-
             // rain drawing
             for(int i = 0; i < mw.getRainPower(); ++i) // drowing the drop
             {
                 if(!drops[i].getTimeout() ) // if drop timeout is 0
                 {
-                     App.draw( drops[i].move( mw.getWindPower(), mw.getGravity() ) ); //  move and drow the drop
+                     DisplayManager().getWindow().draw( drops[i].move( windPower, mw.getGravity() ) ); //  move and drow the drop
                 }
                 else // change drop timeout
                 {
@@ -190,7 +190,7 @@ int main()
                     continue;
                 }
             
-                if( 800 == drops[i].getPosition() ) // if drop is out of the window - reset it
+                if( drops[i].getPosition() > 800 ) // if drop is out of the window - reset it
                 {
                     drops[i].Init();
                 }
@@ -199,17 +199,17 @@ int main()
         else // draw bug if it is not raining
         {
             rainSound.stop();
-            App.draw( bug.getBug() );
+            DisplayManager().getWindow().draw( bug.getBug() );
         }
 
         for( int i = 0; i < mw.getLeaves(); ++i )
         {
-            App.draw( leaves[i].getLeave() );
-            leaves[i].move(mw.getWindPower(), mw.getGravity());
+            DisplayManager().getWindow().draw( leaves[i].getLeave() );
+            leaves[i].move( windPower, mw.getGravity() );
         }
         
-            App.display();
-            App.clear();
+            DisplayManager().getWindow().display();
+            DisplayManager().getWindow().clear();
    }
 
     return EXIT_FAILURE;

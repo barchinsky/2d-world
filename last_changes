@@ -1,0 +1,24 @@
+01.08
+-nebulas added
+
+10.08
+-fixed leave phisics
+-fixed moon phisics
+-fixed cloud phisics
+-wind sound added
+
+12.08
+-simplify and modify fire phisics
+-fire with smoke
+-loading message provided
+
+16.08
+- modifided loading textures of:
+Part, Bug.
+
+5.01.13
+-modifided class Drop with inline functions( no visual effect )
+-change system sleep( 0.01 -> 0.19* ) with a point of decrease CPU overflow( 10% effect on both cores )
+
+5.03.12
+-modified class Cloud( using static class(DisplayManager) for displaing object )
