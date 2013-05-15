@@ -25,11 +25,12 @@ void Sky::update()
     {
         if( (appManager.getTimeDiff() > 10) && (appManager.getTimeDiff() < 1500) )
         {
-            mColUp.set(mColUp.r,mColUp.g+0.05,mColUp.b+0.3,mColUp.a);
-            mColDown.set(mColDown.r+0.2,mColDown.g+0.15,mColDown.b,mColDown.a);
+            //mColUp.set(mColUp.r,mColUp.g+0.05,mColUp.b+0.3,mColUp.a);
+            mColUp.set(mColUp.r,mColUp.g+1,mColUp.b+1,mColUp.a);
+            mColDown.set(mColDown.r+1,mColDown.g+1,mColDown.b,mColDown.a);
             //LOG(mColDown.b);
         }
-        if(mColDown.g > 100) mColDown.g = 100;
+        if(mColDown.g > 100) mColDown.g = 50;
         if(mColDown.r > 250) mColDown.r = 250;
         if(mColUp.b > 180) mColUp.b = 180;
    

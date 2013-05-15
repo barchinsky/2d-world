@@ -31,8 +31,6 @@ World::World()
         leaves = atof( param[6].c_str() ); // get leaves
         fpower = atof( param[7].c_str() );
     }
-    
-    time(&lastTime);
 }
 
 bool World::getRain()
@@ -73,10 +71,4 @@ int World::getLeaves()
 int World::getFlamePow()
 {
     return fpower;
-}
-
-double World::getTimeDiff()
-{
-    time(&currentTime);
-    return difftime(currentTime,lastTime);
 }

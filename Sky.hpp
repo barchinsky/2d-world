@@ -3,10 +3,11 @@
 
 #include <SFML/Graphics.hpp>
 #include <fstream>
+
 #include "ColorScale.hpp"
 #include "DisplayManager.hpp"
 #include "M_Color.hpp"
-#include "AppManager.hpp"
+#include "World.hpp"
 
 class Sky
 {
@@ -18,7 +19,7 @@ class Sky
         M_Color mColDown;
         //ColorScale gradient;
         sf::Color* tab;
-        AppManager appManager;
+        World appManager;
         int sleeptime;
 
     public:

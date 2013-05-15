@@ -23,8 +23,6 @@ class World
         int getLeaves();
         int getFlamePow();
 
-        double getTimeDiff();
-
     private:
         int rpower;
         bool rain;
@@ -34,9 +32,6 @@ class World
         int cloud;
         int leaves;
         int fpower; // flame power
-
-        time_t currentTime;
-        time_t lastTime;
 };
 
 #endif /* World.hpp */

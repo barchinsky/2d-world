@@ -30,8 +30,6 @@ class Part
     World mw;
 
     void incColor();
-    
-
 };
 
 #endif /* Part.hpp */

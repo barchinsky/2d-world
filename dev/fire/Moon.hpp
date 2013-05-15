@@ -2,13 +2,12 @@
 #define MOON_HPP
 
 #include <SFML/Graphics.hpp>
-#include "DisplayManager.hpp"
 
 class Moon
 {
     public:
     Moon();
-    void update();
+    void move();
     sf::Sprite getMoon();
 
     private:

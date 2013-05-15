@@ -9,7 +9,7 @@ Part::Part(sf::Texture& _flameT)
     g = 200;
     b = 180;
     a = 100;
-    x = 80 + rand()%50;
+    x = 70 + rand()%50;
     y = 630;
 
     part.setColor(sf::Color(r,g,b,a));
@@ -22,8 +22,8 @@ void Part::reset()
     r = 180;
     g = 200;
     b = 180;
-    a = 250;
-    x = 80 + rand()%50;
+    a = 100;
+    x = 70 + rand()%50;
     y = 630;
 
     part.setColor(sf::Color(r,g,b,a));
@@ -32,42 +32,40 @@ void Part::reset()
 
 sf::Sprite Part::move(float wind, float gravity, int flame_pow) // change current drop position
 {
-    float smoke_pow = flame_pow*0.05;
+    float smoke_pow = flame_pow - flame_pow/1.1;
 
     if( y < flame_pow && y > flame_pow - smoke_pow ) // draw smoke
     {
-        y+=gravity; // change smoke position
-        x+=wind;
-        
+        y-=gravity; // change smoke position
+
         part.setPosition(x, y);
         part.setColor(sf::Color(20,20,20,25)); // set smoke color
 
         return part;
     }
     
-    if( y < (flame_pow - smoke_pow + 25) ) this->reset(); // reset part
+    if( y < (flame_pow - smoke_pow + 20) ) this->reset(); // reset part
     
     incColor(); // change color
-    
     int elapse = rand()%300;
     if(elapse < 100)
     {
-        x+=(wind+5);
-        y-=1;
+        x+=3;
+        y-=gravity;
 
         part.setPosition(x, y);
         part.setColor(sf::Color(r,g,b,a));
     }
     else if( elapse > 100 && elapse < 200)
     {
-        x-=(wind+5);
-        y-=1;
+        x-=3;
+        y-=gravity;
         part.setPosition(x, y);
         part.setColor(sf::Color(r,g,b,a));
     }
     else
     {
-        y-=2;
+        y--;
         part.setPosition(x, y);
         part.setColor(sf::Color(r,g,b,a));
 
@@ -100,13 +98,14 @@ void Part::setTimeout(int _timeout) // set drop timeout
 
 void Part::incColor()
 {
-    g-= rand()%7;
+    g-= rand()%5;
     b-= rand()%3;
     //r-=3;
-    a -= 10;
+    a -= 5;
 }
 
 sf::Sprite Part::getPart()
 {
     return part;
 }
+

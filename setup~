@@ -1,0 +1,8 @@
+0 rain(bool)
+1 wind(bool)
+-1 windpower
+800 rainpower( max 800 )
+-1.5 gravity
+3 cloudness(min 0, max 4)
+4 leaves
+560 flame_pow(min 500 max 650) ( the less index the bigger flame)
